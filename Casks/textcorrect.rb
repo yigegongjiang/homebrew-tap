@@ -4,12 +4,14 @@ cask "textcorrect" do
 
   url "https://github.com/yigegongjiang/HLVZhCorrect/releases/download/v#{version}/TextCorrect.zip"
   name "TextCorrect"
-  desc "Text sentence and correct for mac app"
+  desc "Sentence splitter and Chinese text corrector"
   homepage "https://github.com/yigegongjiang/HLVZhCorrect"
 
   livecheck do
     skip "Versioned app, end of life"
   end
+
+  depends_on :macos
 
   app "TextCorrect.app"
 end
